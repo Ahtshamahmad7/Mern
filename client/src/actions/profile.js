@@ -94,7 +94,7 @@ async (dispatch) => {
     });
 
     dispatch(
-      setAlert(edit ? 'Profile Updated' : 'Profile Created', 'success')
+      setAlert(edit ? 'Profile Created' : 'Profile Updated', 'success')
     );
 
     if (!edit) {
@@ -106,9 +106,6 @@ async (dispatch) => {
     if (errors) {
       errors.forEach((error) => dispatch(setAlert(error.msg, 'danger')));
     }
-
-    console.log('this is 2');
-    console.log(err);
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statusText, status: err.response.status }

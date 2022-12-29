@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
+  --primary-color: #186996;
   --dark-color: #343a40;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -335,6 +335,13 @@ button {
   position: relative;
   background: url('./img/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
+}
+
+.logo {
+  /* position: relative; */
+  /* background: url('./img/Aivalogo.jpg') no-repeat center center/cover; */
+  width: 150px;
+  /* height: 100vh; */
 }
 
 .landing-inner {

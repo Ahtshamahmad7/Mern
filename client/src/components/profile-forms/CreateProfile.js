@@ -105,7 +105,7 @@ const CreateProfile = ({ createProfile }) => {
             onChange={onChange}
           />
           <small className="form-text">
-            City & state suggested (eg. Boston, MA)
+            City & state suggested (eg. Lahore, New York)
           </small>
         </div>
         <div className="form-group">
@@ -129,7 +129,7 @@ const CreateProfile = ({ createProfile }) => {
             onChange={onChange}
           />
           <small className="form-text">
-            If you want your latest repos and a Github link, include your
+            If you want to link your latest repos and a Github link, include your
             username
           </small>
         </div>

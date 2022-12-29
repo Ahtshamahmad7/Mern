@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createProfile, getCurrentProfile } from '../../actions/profile';
+// import { Dashboard } from '../dashboard/Dashboard';
 
 const EditProfile = ({ profile: { profile, loading }, createProfile, getCurrentProfile }) => {
   const [formData, setFormData] = useState({
@@ -127,7 +128,7 @@ const EditProfile = ({ profile: { profile, loading }, createProfile, getCurrentP
             onChange={onChange}
           />
           <small className="form-text">
-            City & state suggested (eg. Boston, MA)
+            City & state suggested (eg. Lahore, New York)
           </small>
         </div>
         <div className="form-group">
@@ -151,7 +152,7 @@ const EditProfile = ({ profile: { profile, loading }, createProfile, getCurrentP
             onChange={onChange}
           />
           <small className="form-text">
-            If you want your latest repos and a Github link, include your
+            If you want to link your latest repos and a Github link, include your
             username
           </small>
         </div>

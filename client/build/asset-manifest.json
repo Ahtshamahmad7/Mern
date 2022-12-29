@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ae2d1cfc.css",
+    "main.js": "/static/js/main.bd399ba5.js",
+    "static/media/showcase.jpg": "/static/media/showcase.33c7a31be966664a6454.jpg",
+    "static/media/Aivalogo.jpg": "/static/media/Aivalogo.eeadf58b3adc0ce3e513.jpg",
+    "static/media/spinner.gif": "/static/media/spinner.1a32f552ee5280e2aef9.gif",
+    "index.html": "/index.html",
+    "main.ae2d1cfc.css.map": "/static/css/main.ae2d1cfc.css.map",
+    "main.bd399ba5.js.map": "/static/js/main.bd399ba5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae2d1cfc.css",
+    "static/js/main.bd399ba5.js"
+  ]
+}

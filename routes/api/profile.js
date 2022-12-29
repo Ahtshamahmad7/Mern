@@ -70,7 +70,7 @@ router.post(
         if(status) profileFields.status = status;
         if(githubusername) profileFields.githubusername = githubusername;
         if(skills) {
-            profileFields.skills = skills.split(',').map(skill => skill.trim());
+            profileFields.skills = skills.split(',').map(skills => skills.trim());
         }
 
         // Build socialFields object
@@ -149,10 +149,8 @@ router.delete('/', auth, async (req, res) => {
         await Post.deleteMany({ user: req.user.id });
         // remove profile
         await Profile.findOneAndRemove({ user: req.user.id });
-        console.log("this is 1");
         //remove user
         await User.findOneAndRemove({ _id: req.user.id });
-        console.log("this is 2");
 
         res.json({ msg: 'User deleted' });
     }
