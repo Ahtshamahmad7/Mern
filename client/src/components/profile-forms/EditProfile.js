@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import PropTypes from 'prop-types';
-import { Link, useMatch, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createProfile, getCurrentProfile } from '../../actions/profile';
 
@@ -42,7 +42,7 @@ const EditProfile = ({ profile: { profile, loading }, createProfile, getCurrentP
       // set local state with the profileData
       setFormData(profileData);
     }
-  }, [loading, getCurrentProfile, profile]);
+  }, [formData, loading, getCurrentProfile, profile]);
 
   const {
     company,
